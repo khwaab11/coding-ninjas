@@ -1,0 +1,29 @@
+//creat database named movies
+
+mysqli:
+create database movies;
+
+//create tble movies
+
+CREATE TABLE movies (
+    ID int,
+    Name varchar(255),
+    Actor varchar(255),
+    Actress varchar(255),
+    Director varchar(255), Year int
+);
+
+//insert values into movies
+INSERT INTO movies (ID, Name, Actor, Actress, Year)
+VALUES ('1', 'RRR', 'ntr', 'alia bhatt', '2022');
+
+INSERT INTO movies (ID, Name, Actor, Actress, Year)
+VALUES ('2', 'Bahunali', 'Prabhas', 'Anushka', '2018');
+
+//retrieve data from movies
+//query for all rows
+select * from movies;
+
+//query to retrieve from actors name
+
+select name from movies where actor="Prabhas";
